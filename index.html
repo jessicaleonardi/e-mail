@@ -66,34 +66,34 @@
 	}*/
 	
 	.head {
-		font-family: neue-haas-grotesk-display;
+		font-family: neue-haas-grotesk-display, sans-serif;
 		font-weight: bold;
 		color: black;
 		font-size: 60pt;
 		text-align: center;
 	}
 	.head-capitolo {
-		font-family: neue-haas-grotesk-display;
+		font-family: neue-haas-grotesk-display, sans-serif;
 		font-weight: bold;
 		color: black;
 		font-size: 50pt;
 		text-align: center;
 	}
 	.head-copertina {
-		font-family: neue-haas-grotesk-display;
+		font-family: neue-haas-grotesk-display, sans-serif;
 		font-weight: bold;
 		color: black;
 		font-size: 90pt;
 		text-align: center;
 	}
 	.simbolo {
-		font-family: neue-haas-grotesk-display;
+		font-family: neue-haas-grotesk-display, sans-serif;
 		color: black;
 		font-size: 200px;
 		text-align: center;
 	}
 	.subtitle {
-		font-family: neue-haas-grotesk-display;
+		font-family: neue-haas-grotesk-display, sans-serif;
 		font-size: 30pt;
 		color: black;
 		text-align: center;
@@ -144,12 +144,17 @@
 	.cella {
 		outline: 1px red solid;
 	}
+	.cella img {
+		width: 100%;
+	}
+
 
 	.circolare {
-  	width: 418px;
-  	height: 418px;
-  	border-radius:50%; 
-  	border: 10px solid black;  
+		display: block;
+	  	width: 100%;
+	  	/*height: 100%;*/
+	  	border-radius:50%; 
+	  	border: 3px solid black;  
 	}
 
 	.doppia {
@@ -175,7 +180,7 @@
 	}
 	.cella-copertina {
 		height: 720px;
-		outline: 0px red solid;
+		outline: 1px red solid;
 	}
 	.immagine-piena {
 		width: 100%;
@@ -183,7 +188,7 @@
 		object-fit: cover;
 	}
 	.linea-img {
-		background-image: url(file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf);
+		background-image: url(assets/img/linea.pdf);
 		background-size: contain;
 		background-position: center center;
 		width: 30%;
@@ -191,11 +196,9 @@
 		margin-left: 35%;
 	}
 	.stonks-img {
-		background-image: url(file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/stonks.png);
-		background-size: cover;
+		background-image: url(assets/img/stonks.png);
+		background-size: contain;
 		/*background-position: center center;*/
-		width: 100%;
-		height: 100%;
 	}
 	.padding-centro {
 		padding-top: 40%;
@@ -279,7 +282,7 @@
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>	
 
 	<div class="griglia">
@@ -289,7 +292,7 @@
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -299,7 +302,7 @@
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -310,18 +313,18 @@
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
 		<div class="cella doppia subtitle2"> Un successo <br> meritato </div>
 		<div class="cella doppia testo">La chiave di successo dell’e-mail è la semplicità: intuitiva, veloce, economica e sempre disponibile sono queste le caratteristiche che rendono l’e-mail il più utilizzato mezzo di comunicazione diretta. In pochi secondi viene inviata senza costi aggiuntivi (francobolli, scatti telefonici) a uno o a tanti mittenti contemporaneamente e non è necessario che il destinatario sia disponibile a rispondere  al momento della ricezione. Per questi motivi rappresenta anche un ottimo strumento di marketing: economico, istantaneo, e permette di girare contemporaneamente lo stesso messaggio ad una moltitudine (broadcast) oppure di creare un rapporto uno a uno (bidirezionale), personalizzando ogni messaggio. Altri sistemi contemporanei di comunicazione, come Messenger, WhatsApp, e Telegram, non sono riusciti ancora a soffocare la posta elettronica.
 		</div>
-		<div class="cella doppia stonks-img"></div>
+		<div class="cella doppia"> <img src="assets/img/stonks.png" style=""></div>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 <!-- STORIA E LINEA DEL TEMPO -->
@@ -331,35 +334,6 @@
 		<div class="cella quadrupla head-capitolo" align="center">Com’è nata l’e-mail, detta anche posta elettronica?</div>
 		<div class="cella"></div>
 	</div>
-<!-- 
-	<pre id="input" class="invisibile">
-Com’è nata l’e-mail, detta anche posta elettronica?</pre>
-
-	<div class="griglia">
-		<div class="cella sestupla head-capitolo"><pre id="output"></pre></div>
-	</div>
-
-	<script type="text/javascript">
-
-		let testo = document.querySelector('#input').innerText
-
-		let out = document.querySelector('#output')
-
-		let indice = 0
-		function aggiungiTesto() {
-			out.innerText += testo[indice]
-			indice = indice + 1
-			if (indice < testo.length) {
-				let pausa = Math.floor(Math.random() * 3) * 70 + 50
-				setTimeout(aggiungiTesto, pausa)
-			}
-		}
-		aggiungiTesto()
-	</script> -->
-
-	<!-- <div class="griglia">
-		<div class="cella sestupla head" align="center">Com’è nata l’e-mail, detta anche posta elettronica?</div>
-	</div> -->
 
 	<div class="griglia2">
 		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
@@ -379,7 +353,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1965 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/mailbox.jpeg"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/mailbox.jpeg"></div>
 		<div class="cella doppia testo"> Alcuni ricercatori del MIT di Boston sviluppano <u>MAILBOX</u>, un software che permetteva di inviare messaggi agli altri studenti o ricercatori dell’Università. Purtroppo il programma non funziona benissimo: i messaggi vengono salvati solamente sul computer dove sono scritti: il destinatario del messaggio per poterlo leggere deve accedere a MAILBOX dallo stesso terminale.</div>
 	</div>
 
@@ -390,7 +364,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1971 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/prima_email.jpeg"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/prima_email.jpeg"></div>
 		<div class="cella doppia testo">Il ricercatore <u>RAY TOMLINSON</u> sviluppa un software che permette di far comunicare le diverse persone che lavorano ad ARPANET utilizzando il computer, e nasce così l’e-mail. QWERTYUIOP sono sia le prime dieci lettere della tastiera che, secondo una leggenda del web, il testo del primo messaggio di posta elettronica inviato da Tomlinson. </div>
 	</div>
 
@@ -400,7 +374,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia"></div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/ray_tomlinson.jpg"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/ray_tomlinson.jpg"></div>
 		<div class="cella doppia testo">Insieme al messaggio di posta elettronica, il giovane sviluppatore statunitense studia la forma dell’indirizzo di posta elettronica, e reinterpreta la <u>CHIOCCIOLA</u> che serviva a far capire a che computer dovesse essere inviata l’-email (ad esempio nomemittente@nomecomputer). Questo simbolo indica il dominio che ospita la singola casella di posta elettronica ed ha origini molto antiche. Nel medioevo gli amanuensi lo utilizzavano al posto della preposizione di luogo latina “ad”, e più tardi fu impiegato nei mercati fiorentini del ‘500 per indicare l’anfora, un’antica unità di misura. Solo negli anni ‘70 Tomlinson pensò di inserirlo tra il nome del destinatario e il percorso per arrivare al server ospite, avvalendosi così del significato originario della chiocciola, ovvero letteralmente “presso”.</div>
 	</div>
 
@@ -411,7 +385,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1975 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/sentvsinbox.jpeg"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/sentvsinbox.jpeg"></div>
 		<div class="cella doppia testo"> Shiva Ayyadurai progetta la suddivisione delle <u>CASELLE DI POSTA ELETTRONICA</u> in “messaggi in entrata” e “messaggi in uscita”. Ciò permette un'organizzazione più razionale e chiara delle email, oltre che una suddivisione più netta della conversazione tra mittente e destinatario. D'ora in avanti tracciare le email diventa decisamente più facile e fattibile.</div>
 	</div>
 
@@ -422,7 +396,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1980 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/prime-emoji-shigetaka-kurita.png"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/prime-emoji-shigetaka-kurita.png"></div>
 		<div class="cella doppia testo"> Fanno il loro debutto le <u>EMOTICON</u>, utilizzate nei messaggi per esprimere il proprio stato d’animo, in principio puramente testuali. Le prime emoji a simbolo risalgono solo al 1999, create da Shigetaka Kurita. Da allora esse permettono di utilizzare un linguaggio più affine alla fisiognomica e di comunicare dei messaggi più vicini alla comunicazione non verbale. </div>
 	</div>
 
@@ -433,7 +407,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1985 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/isp.png"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/isp.png"></div>
 		<div class="cella doppia testo"> Con l’arrivo dei primi <u>INTERNET SERVICE PROVIDER</u>, avviene il passaggio da programma utilizzato solamente all’interno di ARPANET a strumento diffuso in tutto il mondo. Gli ISP hanno permesso all’e-mail di divenire un vero e proprio mezzo di comunicazione globale, garantendo una connessione capillare tra le persone sparse ovunque per il mondo. L’e-mail pone fine alle lunghe file davanti al fax, riduce l’uso di fotocopiatrici e di comunicazioni via telefono. </div>
 	</div>
 
@@ -444,7 +418,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1988 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/eudora.png"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/eudora.png"></div>
 		<div class="cella doppia testo"> Nascono <u>EUDORA</u>, <u>PEGASUS MAIL</u>, <u>LOTUS NOTES</u>, alcuni tra i primi client di posta, ossia programmi per la gestione, composizione, trasmissione, ricezione e organizzazione di e-mail. Ad esempio, Eudora è uno dei primi programmi di posta elettronica creati e resi pubblici gratuitamente (freeware), con un'interfaccia grafica appositamente realizzata. La prima versione fu scritta da Steve Dorner. </div>
 	</div>
 
@@ -455,7 +429,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1990 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/mailinglist.png"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/mailinglist.png"></div>
 		<div class="cella doppia testo">Nascono le prime <u>MAILING LIST </u>, ovvero dei gruppi di discussione che utilizzano la posta elettronica per comunicare tra di loro (gli antenati dei gruppi su WhatsApp). Letteralmente "lista di corrispondenza", è intesa sia come lista di distribuzione e diffusione che come lista di discussione. Nello specifico è un sistema organizzato per la partecipazione di più persone ad una discussione asincrona o per la distribuzione di informazioni utili agli interessati/iscritti attraverso l'invio in multicast di email ad una lista di indirizzi di posta elettronica di utenti iscritti. </div>
 	</div>
 
@@ -466,7 +440,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1992 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1//e-mail/assets/img/outlook.gif"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/outlook.gif"></div>
 		<div class="cella doppia testo">Debutta <u>MICROSOFT OUTLOOK</u>, il primo servizio e client di posta elettronica moderno. La storia del software Microsoft Outlook inizia con il rilascio di Outlook per MS-DOS. Questa versione originale è ben lontana dallo strumento multifunzionale di comunicazione e di gestione che è divenuta ora, punto fermo negli uffici di tutto il mondo.</div>
 	</div>
 
@@ -477,7 +451,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 1995 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/spam.png"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/spam.png"></div>
 		<div class="cella doppia testo">Negli anni ’90, con l’uso più massiccio della posta elettronica prende vita il fenomeno fastidioso dello <u>SPAMMING</u>. L’invio di messaggi pubblicitari a mittenti che non hanno autorizzato l’uso del proprio indirizzo diventa in pochi anni una piaga del web.  La parola SPAM deriva da una marca di carne di maiale in scatola (spiced ham) famosa in USA negli anni ’70 perché attuò una massiccia campagna pubblicitaria con invio continuo di volantini promozionali tramite posta. </div>
 	</div>
 
@@ -487,7 +461,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia"></div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/Spam-email.jpg"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/Spam-email.jpg"></div>
 		<div class="cella doppia testo">Le junk mail, posta spazzatura, rappresentano quindi una reale molestia digitale. È presente un certo numero di servizi e software, spesso chiamati <u>ANTISPAM</u>, che i server e-mail e gli utenti possono utilizzare per ridurre il carico di spam sui loro sistemi e caselle di posta. Alcuni di questi contano sul rifiuto dei messaggi provenienti dai server conosciuti come spammer (bloccaggio), altri analizzano in modo automatico il contenuto dei messaggi e-mail ed eliminano o spostano in una cartella speciale quelli che sembrano spam (filtraggio). Il bloccaggio permette anche di ridurre la banda sprecata, rifiutando i messaggi prima che siano trasmessi al server dell’utente, e viene preferita perché alcuni trovano la tecnica del filtraggio automatico troppo invadente nei riguardi della privacy.</div>
 	</div>
 
@@ -498,7 +472,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 2004 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1//e-mail/assets/img/pec.png"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/pec.png"></div>
 		<div class="cella doppia testo">Viene ideata la posta elettronica certificata <u>PEC</u>, una e-mail particolare dotata dello stesso valore della raccomandata di ritorno. La PEC rende i documenti elettronici inviati validi sia legalmente che dal punto di vista amministrativo. Questo strumento negli anni ha avuto un ruolo sempre più importante per chiunque volesse interagire direttamente con la Pubblica Amministrazione.</div>
 	</div>
 
@@ -509,7 +483,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia head padding-centro"> 2007 </div>
-		<div class="cella doppia"><img class="circolare" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/gmail.png"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/gmail.png"></div>
 		<div class="cella doppia testo">Nasce <u>GMAIL</u>, il servizio più tardivo ma che diventa in poco tempo il più utilizzato al mondo. Gmail è un servizio gratuito di posta elettronica fornito da Google. È possibile accedervi via web o tramite applicazioni che usano i protocolli POP3 ed IMAP.</div>
 	</div>
 
@@ -554,7 +528,7 @@ Come funziona l’e-mail?</pre>
 
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -564,7 +538,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -574,7 +548,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -584,7 +558,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -594,7 +568,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<!-- <div class="griglia">
@@ -605,24 +579,24 @@ Come funziona l’e-mail?</pre>
 
 	<div class="griglia">
 		<div class="cella"></div>
-		<div class="cella quadrupla"> <video class="video-centrale" poster="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/intro_smtp.png" controls> <source src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/video/SMTP-GoDaddy.mp4"></video> </div>
+		<div class="cella quadrupla"> <video class="video-centrale" poster="assets/img/intro_smtp.png" controls> <source src="assets/video/SMTP-GoDaddy.mp4"></video> </div>
 		<div class="cella testo"> Per approfondire il concetto di SMTP, estratto di un video pubblicato sulla piattaforma Youtube dal canale GoDaddy.</div>
 	</div>
 
 	<div class="griglia">
 		<div class="cella"> </div>
-		<div class="cella quadrupla">  <video class="video-centrale" poster="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/intro_pop.png" controls> <source src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/video/POP-and-IMAP-GoDaddy.mp4"></video> </div>
+		<div class="cella quadrupla">  <video class="video-centrale" poster="assets/img/intro_pop.png" controls> <source src="assets/video/POP-and-IMAP-GoDaddy.mp4"></video> </div>
 		<div class="cella testo"> Per approfondire la relaziione tra POP3 e IMAP, estratto di un video pubblicato sulla piattaforma Youtube dal canale GoDaddy.</div>
 	</div>
 
 	<div class="griglia">
 		<div class="cella"> </div>
-		<div class="cella quadrupla"> <video class="video-centrale" poster="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/intro_dns.png" controls> <source src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/video/DNS-GoDaddy.mp4"></video> </div>
+		<div class="cella quadrupla"> <video class="video-centrale" poster="assets/img/intro_dns.png" controls> <source src="assets/video/DNS-GoDaddy.mp4"></video> </div>
 		<div class="cella testo">Per approfondire il concetto di DNS, estratto di un video pubblicato sulla piattaforma Youtube dal canale GoDaddy.</div>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 
@@ -636,7 +610,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -646,7 +620,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -656,7 +630,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -670,13 +644,6 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<!-- FOOTER -->
-
-
-<!-- 	```html
-Descrizione, autore, anno. Tratta da <a href="https://www.supsi.ch" alt="Sito web SUPSI" taget="_blank">Nome sito web.</a>
-```
-```html
-Cognome Autore, N. (data di pubblicazione). <a href="https://www.treccani.it/enciclopedia/tag/atlante/" title="Titolo della pagina" target="_blank">Titolo della pagina</a>. Titolo del sito web. -->
 
 
 	<div class="griglia">
