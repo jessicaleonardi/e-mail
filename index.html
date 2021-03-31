@@ -107,6 +107,7 @@
 		font-size: 30pt;
 		color: black;
 		text-align: center;
+		letter-spacing: 0.1px;
 	}
 	.subtitle2 {
 		font-family: neue-haas-grotesk-display,sans-serif;
@@ -114,6 +115,7 @@
 		font-style: normal;
 		font-size: 30pt;
 		color: black;
+		letter-spacing: 0.1px;
 	}
 	.subtitle3 {
 		font-family: neue-haas-grotesk-display,sans-serif;
@@ -122,12 +124,21 @@
 		font-size: 60pt;
 		color: black;
 	}
+	.citazione {
+		font-family: neue-haas-grotesk-display,sans-serif;
+		font-weight: 600;
+		font-style: normal;
+		font-size: 18pt;
+		color: black;
+		letter-spacing: 0.1px;
+	}
 	.indice {
 		font-family: neue-haas-grotesk-display,sans-serif;
 		font-weight: 500;
 		font-style: normal;
 		font-size: 30pt;
 		color: black;
+		letter-spacing: 0.1px;
 	}
 	.testo {
 		font-family: neue-haas-grotesk-display,sans-serif;
@@ -135,6 +146,7 @@
 		font-style: normal;
 		font-size: 13pt;
 		color: black;
+		letter-spacing: 0.1px;
 	}
 	.testo-bold {
 		font-family: neue-haas-grotesk-display,sans-serif;
@@ -142,9 +154,10 @@
 		font-style: normal;
 		font-size: 13pt;
 		color: black;
+		letter-spacing: 0.3px;
 	}
 	.grigio {
-		color: dimgray;
+		color: gray;
 	}
 
 	/*GRIGLIA*/
@@ -172,9 +185,8 @@
 	.circolare {
 		display: block;
 	  	width: 100%;
-	  	/*height: 100%;*/
 	  	border-radius:50%; 
-	  	border: 3px solid black;  
+	  	border: 4px solid #cdcccc;  
 	}
 
 	.doppia {
@@ -214,14 +226,6 @@
 		width: 30%;
 	/*	margin-left: 35%;*/
 	}
-	.stonks-img {
-		background-image: url(assets/img/stonks.png);
-		background-size: contain;
-		/*background-position: center center;*/
-	}
-	/*.padding-centro {
-		padding-top: 40%;
-	}*/
 
 	pre {
 		font-family: neue-haas-grotesk-display,sans-serif;
@@ -250,11 +254,50 @@
 
 <div class="griglia2">
 		<div class="cella sestupla indice"><u>Indice</u></div>
-		<div class="cella-copertina sestupla head-copertina" onmousemove="fallRain()"> <br>
-			<br> e-mail 
-			<!-- <img src="file:///Users/jessica/Desktop/Media_Interaction/Esercizio_1/e-mail/assets/img/linea2.pdf"> -->
-		</div>
 </div>
+
+<pre id="input" class="invisibile">
+
+
+email
+</pre>
+
+	<div class="griglia2">
+		<div class="cella-copertina sestupla head-copertina">
+			<pre id="output" class="head-copertina" ></pre>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		let testo = document.querySelector('#input').innerText
+
+		let out = document.querySelector('#output')
+
+		let indice = 0
+		function aggiungiTesto() {
+			out.innerText += testo[indice]
+			indice = indice + 1
+			if (indice < testo.length) {
+				let pausa = Math.floor(Math.random() * 3) * 70 + 50
+				setTimeout(aggiungiTesto, pausa)
+			}
+		}
+		aggiungiTesto()
+
+
+	</script>
+
+
+<!-- <div class="griglia2">
+		<div class="cella-copertina sestupla head-copertina"> 
+			<br>
+			<br> e-mail 
+		</div> -->
+</div>
+
+
+	<!-- PIOGGIA DI EMAIL -->
 
 <script type="text/javascript">
 
@@ -277,8 +320,6 @@
 	</script>
 
 
-
-
 </head>
 
 <body>
@@ -290,17 +331,17 @@
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/lineaw.pdf" onmousemove="fallRain()"> </div>
 	</div>	
 
 	<div class="griglia">
 		<div class="cella"></div>
-		<div class="cella quadrupla subtitle" align="center"> Con l'avvento di Internet ed i suoi collegamenti, si è avverata la possibilità di comunicare a distanza inviandosi messaggi. Oggi, chiunque è costantemente vittima ed arteficie di una vera e propria pioggia di email.</div>
+		<div class="cella quadrupla citazione" align="center"> Con l'avvento di Internet ed i suoi collegamenti, si è avverata la possibilità di comunicare a distanza inviandosi messaggi. Oggi, chiunque è costantemente vittima ed arteficie di una vera e propria pioggia di email.</div>
 		<div class="cella"></div>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/lineaw.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -323,7 +364,7 @@
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/lineaw.pdf"> </div>
 	</div>
 
 <!-- STORIA E LINEA DEL TEMPO -->
@@ -380,8 +421,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -391,8 +432,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -402,7 +443,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -412,8 +453,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -423,8 +464,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -434,8 +475,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -445,8 +486,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -456,19 +497,19 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
 		<div class="cella doppia"><p class="subtitle2">1990 <br> Mailing list </p> <p><br></p><p class="testo"> Nascono le prime Mailing list, ovvero dei gruppi di discussione che utilizzano la posta elettronica per comunicare tra di loro (gli antenati dei gruppi su WhatsApp). Letteralmente "lista di corrispondenza", è intesa sia come lista di distribuzione e diffusione che come lista di discussione. Nello specifico è un sistema organizzato per la partecipazione di più persone ad una discussione asincrona o per la distribuzione di informazioni utili agli interessati/iscritti attraverso l'invio in multicast di email ad una lista di indirizzi di posta elettronica di utenti iscritti.</p></div>
-		<div class="cella doppia"><img class="circolare" src="assets/img/mailinglist.png"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/mailinglist2.png"></div>
 		<div class="cella doppia"> </div>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -478,8 +519,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -489,18 +530,18 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
 		<div class="cella doppia"></div>
-		<div class="cella doppia"><img class="circolare" src="assets/img/Spam-email.jpg"></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/Spam-email2.jpg"></div>
 		<div class="cella doppia testo">Le junk mail (posta spazzatura) rappresentano una reale molestia digitale. Si possono combattere con software chiamati <u>ANTISPAM</u>, che i server e-mail utilizzano per ridurre il carico di spam. Alcuni di questi rifiutano dei messaggi provenienti da server conosciuti come spammer (bloccaggio), altri analizzano in modo automatico il contenuto delle e-mail ed eliminano o spostano quelli che sembrano spam (filtraggio). Il bloccaggio permette anche di ridurre la banda sprecata, rifiutando i messaggi prima che siano trasmessi, e viene preferita perché moltu trovano la tecnica del filtraggio troppo invadente nei riguardi della privacy.</div>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -510,8 +551,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
+		<div class="cella-spazio sestupla" div style="width:5px;background-color:#cdcccc;position: relative;left: 50%;"></div>
 	</div>
 
 	<div class="griglia2">
@@ -520,9 +561,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 		<div class="cella doppia"><p class="subtitle2">2007 <br> Gmail </p> <p><br></p><p class="testo">Nasce Google mail, abbreviato Gmail, il servizio più tardivo ma che diventa in poco tempo il più utilizzato al mondo. Gmail è un servizio gratuito di posta elettronica fornito da Google. È possibile accedervi via web o tramite applicazioni che usano i protocolli POP3 ed IMAP.</p> </div>
 	</div>
 
-	<div class="griglia2">
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
-		<div class="cella-spazio sestupla" div style="width:10px;background-color:black;position: relative;left: 50%;"></div>
+	<div class="griglia">
+		<div class="cella-spazio sestupla"></div>
 	</div>
 
 <!-- FUNZIONAMENTO BACK-END -->
@@ -563,7 +603,7 @@ Come funziona l’e-mail?</pre>
 
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/lineaw.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -603,7 +643,7 @@ Come funziona l’e-mail?</pre>
 	</div> -->
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/lineaw.pdf"> </div>
 	</div>
 
 	<div class="griglia">
@@ -619,7 +659,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/lineaw.pdf"> </div>
 	</div>
 
 	<!-- <div class="griglia">
@@ -639,7 +679,7 @@ Come funziona l’e-mail?</pre>
 	<div class="griglia">
 		<div class="cella"> </div>
 		<div class="cella quadrupla">  <video class="video-centrale" poster="assets/img/intro_pop2.png" controls> <source src="assets/video/POP-and-IMAP-GoDaddy.mp4"></video> </div>
-		<div class="cella testo"> Per approfondire la relaziione tra POP3 e IMAP, estratto di un video pubblicato sulla piattaforma Youtube dal canale GoDaddy.</div>
+		<div class="cella testo"> Per approfondire la relazione tra POP3 e IMAP, estratto di un video pubblicato sulla piattaforma Youtube dal canale GoDaddy.</div>
 	</div>
 
 	<div class="griglia">
@@ -649,7 +689,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/lineaw.pdf"> </div>
 	</div>
 
 
@@ -663,7 +703,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella sestupla"> <img class="linea-img" src="assets/img/linea.pdf"> </div>
+		<div class="cella sestupla"> <img class="linea-img" src="assets/img/lineaw.pdf"> </div>
 	</div>
 
 	<div class="griglia">
