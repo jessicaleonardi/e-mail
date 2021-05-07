@@ -274,16 +274,28 @@ email
 
 		let out = document.querySelector('#output')
 
+		let interval = 3000;
+
 		let indice = 0
 		function aggiungiTesto() {
 			out.innerText += testo[indice]
 			indice = indice + 1
-			if (indice < testo.length) {
+			if (indice <= testo.length) {
 				let pausa = Math.floor(Math.random() * 3) * 70 + 50
 				setTimeout(aggiungiTesto, pausa)
 			}
+			else {
+				out.innerText = ""
+				indice = 0 
+			}
+			console.log(testo[indice])
 		}
-		aggiungiTesto()
+
+		aggiungiTesto();
+		setInterval(aggiungiTesto,interval)
+
+		
+
 
 
 	</script>
@@ -351,9 +363,9 @@ email
 	</div>
 
 	<div class="griglia">
-		<div class="cella doppia testo">La posta elettronica, in inglese e-mail (abbreviazione di electronic mail), è un servizio Internet grazie al quale ogni utente abilitato può inviare e ricevere dei messaggi utilizzando un computer o altro dispositivo elettronico (come palmare, smartphone, tablet) connesso in rete attraverso un proprio account di posta registrato presso un fornitore del servizio. È la controparte digitale ed elettronica della posta ordinaria e cartacea.</div>
+		<div class="cella doppia testo">La posta elettronica, in inglese e-mail o email (abbreviazione di electronic mail), è un servizio Internet grazie al quale ogni utente abilitato può inviare e ricevere dei messaggi utilizzando un computer o altro dispositivo elettronico (come palmare, smartphone, tablet) connesso in rete attraverso un proprio account di posta registrato presso un fornitore del servizio. È la controparte digitale ed elettronica della posta ordinaria e cartacea.</div>
 		<div class="cella doppia testo">L’uomo ha sempre avuto bisogno di comunicare, soprattutto quando il destinatario del proprio messaggio si trova a decine e decine di chilometri di distanza. ARPANET, il progetto portato avanti dal Ministero della Difesa statunitense, ha per primo dato avvio alla risoluzione della difficoltà. L’email è diventata lo strumento più utilizzato per comunicare a distanza: spedire un messaggio di posta elettronica ad un amico, collega o superiore è una delle tante azioni quotidiane che compiamo, inconsapevoli di ciò che ci sia dietro.</div>
-		<div class="cella doppia testo">La chiave di successo dell’e-mail è la semplicità: intuitiva, veloce, economica e sempre disponibile sono queste le caratteristiche che la rendono il più utilizzato mezzo di comunicazione diretta. In pochi secondi viene inviata senza costi aggiuntivi, e non necessita che il destinatario sia disponibile a rispondere  al momento della ricezione. Per questi motivi rappresenta un ottimo strumento di marketing: economico, istantaneo e permette di girare contemporaneamente lo stesso messaggio ad una moltitudine (broadcast) oppure di creare un rapporto uno a uno (bidirezionale).</div>
+		<div class="cella doppia testo">La chiave di successo dell’email è la semplicità: intuitiva, veloce, economica e sempre disponibile sono queste le caratteristiche che la rendono il più utilizzato mezzo di comunicazione diretta. In pochi secondi viene inviata senza costi aggiuntivi, e non necessita che il destinatario sia disponibile a rispondere  al momento della ricezione. Per questi motivi rappresenta un ottimo strumento di marketing: economico, istantaneo e permette di girare contemporaneamente lo stesso messaggio ad una moltitudine (broadcast) oppure di creare un rapporto uno a uno (bidirezionale).</div>
 	</div>
 
 	<div class="griglia">
@@ -371,7 +383,7 @@ email
 
 	<div class="griglia" id="storia">
 		<div class="cella"></div>
-		<div class="cella quadrupla head-capitolo" align="center">Com’è nata l’e-mail, detta anche posta elettronica?</div>
+		<div class="cella quadrupla head-capitolo" align="center">Com’è nata l’email, detta anche posta elettronica?</div>
 		<div class="cella"></div>
 	</div>
 
@@ -766,7 +778,7 @@ Come funziona l’e-mail?</pre>
 			<p class="testo-bold grigio">Sitografia testi</p> 
 			<p><br></p>
 			<p><a class="grigio" href=https://it.wikipedia.org/wiki/Posta_elettronica>Wikipedia. La posta elettronica</a></p>
-			<p><a class="grigio" href=https://www.tuttosullapostaelettronica.it/blog/la-storia-della-posta-elettronica/>Andrea Marucci. Tutto sulla posta elettronica, la storia dell'emai.</a></p>
+			<p><a class="grigio" href=https://www.tuttosullapostaelettronica.it/blog/la-storia-della-posta-elettronica/>Andrea Marucci. Tutto sulla posta elettronica, la storia dell'email</a></p>
 			<p><a class="grigio" href=https://www.tuttosullapostaelettronica.it/blog/come-funziona-la-posta-elettronica/>Andrea Marucci. Tutto sulla posta elettronica, come funziona l'email</a></p> 
 			<p><a class="grigio" href=https://www.fastweb.it/web-e-digital/storia-dell-email/#:~:text=La%20nascita%20della%20e%2Dmail,messaggio%20da%20computer%20a%20computer.>Fastweb. Storia dell'email</a></p> 
 			<p><a class="grigio" href=https://news.titanka.com/2012/04/19/breve-storia-dellemail/>Blog Titanka. Breve storia dell'email</a></p> 
