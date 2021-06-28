@@ -85,6 +85,16 @@
 		font-size: 40pt;
 		text-align: center;
 	}
+
+	.anno {
+		font-family: neue-haas-grotesk-display, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		color: black;
+		font-size: 70pt;
+		text-align: left;
+	}
+
 	.head-copertina {
 		font-family: neue-haas-grotesk-display, sans-serif;
 		font-weight: 700;
@@ -180,15 +190,15 @@
 	.cella img {
 		width: 100%;
 	}
-
-
 	.circolare {
 		display: block;
 	  	width: 100%;
 	  	border-radius:50%; 
 	  	border: 4px solid #cdcccc;  
 	}
-
+	.bordo-video { 
+	  	border: 4px solid #cdcccc;  
+	}
 	.doppia {
 		grid-column: span 2;
 	}
@@ -253,7 +263,7 @@
 </style>
 
 <div class="griglia2">
-		<div class="cella sestupla indice"><u>Indice</u></div>
+		<div class="cella sestupla indice">Indice</div>
 </div>
 
 <pre id="input" class="invisibile">
@@ -274,7 +284,7 @@ email
 
 		let out = document.querySelector('#output')
 
-		let interval = 3000;
+		let interval = 2000;
 
 		let indice = 0
 		function aggiungiTesto() {
@@ -338,7 +348,7 @@ email
 	
 	<div class="griglia">
 		<div class="cella"></div>
-		<div class="cella quadrupla subtitle"><a class="subtitle2" href="#introduzione">Cos'è</a> — <a class="subtitle2" href="#storia"> Com'è nata </a> — <a class="subtitle2" href="#funzionamento"> Come funziona</a></div>
+		<div class="cella quadrupla subtitle"><a class="subtitle2" href="#introduzione">Cos’è</a> — <a class="subtitle2" href="#storia"> Com’è nata </a> — <a class="subtitle2" href="#funzionamento"> Come funziona</a></div>
 		<div class="cella"></div>
 	</div>
 
@@ -348,7 +358,7 @@ email
 
 	<div class="griglia">
 		<div class="cella"></div>
-		<div class="cella quadrupla citazione" align="center"> Con l'avvento di Internet ed i suoi collegamenti, si è avverata la possibilità di comunicare a distanza inviandosi messaggi. Oggi, chiunque è costantemente vittima ed arteficie di una vera e propria pioggia di email.</div>
+		<div class="cella quadrupla citazione" align="center"> Con l’avvento di Internet ed i suoi collegamenti, si è avverata la possibilità di comunicare a distanza inviandosi messaggi. Oggi, chiunque è costantemente vittima ed arteficie di una vera e propria pioggia di email.</div>
 		<div class="cella"></div>
 	</div>
 
@@ -427,7 +437,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div> -->
 
 	<div class="griglia2">
-		<div class="cella doppia"><p class="subtitle2">1930 <br> Gli antenati</p> <p><br></p><p class="testo"> Telegrafo e Telex servivano per inviare messaggi da lunghe distanze. Sebbene questi strumenti non somiglino minimamente alla moderna e-mail, possono essere considerati gli antenati dei messaggi di posta elettronica.</p></div>
+		<div class="cella doppia"><p class="anno">1930 </p> <br> <p class="subtitle2"> Gli antenati</p> <p><br></p><p class="testo"> Telegrafo e Telex servivano per inviare messaggi da lunghe distanze. Sebbene questi strumenti non somiglino minimamente alla moderna email, possono essere considerati gli antenati dei messaggi di posta elettronica.</p></div>
 		<div class="cella doppia"><img class="circolare" src="assets/img/telegrafo2.jpg"></div>
 		<div class="cella doppia"> </div>
 	</div>
@@ -440,7 +450,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	<div class="griglia2">
 		<div class="cella doppia"></div>
 		<div class="cella doppia"><img class="circolare" src="assets/img/mailbox.jpeg"></div>
-		<div class="cella doppia"><p class="subtitle2">1965 <br> Mailbox</p> <p><br></p><p class="testo">Alcuni ricercatori del MIT di Boston sviluppano MAILBOX, un software che permetteva di inviare messaggi agli altri studenti o ricercatori dell’Università. Purtroppo il programma non funziona benissimo: i messaggi vengono salvati solamente sul computer dove sono scritti: il destinatario del messaggio per poterlo leggere deve accedere a MAILBOX dallo stesso terminale.</p> </div>
+		<div class="cella doppia"><p class="anno">1965</p> <br> <p class="subtitle2"> Mailbox</p> <p><br></p><p class="testo">Alcuni ricercatori del MIT di Boston sviluppano MAILBOX, un software che permetteva di inviare messaggi agli altri studenti o ricercatori dell’Università. Purtroppo il programma non funziona benissimo: i messaggi vengono salvati solamente sul computer dove sono scritti: il destinatario del messaggio per poterlo leggere deve accedere a MAILBOX dallo stesso terminale.</p> </div>
 	</div>
 
 	<div class="griglia2">
@@ -449,7 +459,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella doppia"><p class="subtitle2">1971 <br> Ray Tomlinson </p> <p><br></p><p class="testo">Il ricercatore Ray Tomlinson sviluppa un software che permette di far comunicare le diverse persone che lavorano ad ARPANET utilizzando il computer, e nasce così l’e-mail. QWERTYUIOP sono sia le prime dieci lettere della tastiera che, secondo una leggenda del web, il testo del primo messaggio di posta elettronica inviato da Tomlinson. Lo sviluppatore statunitense studia anche la forma dell’indirizzo di posta elettronica, e reinterpreta il simbolo chiocciola.</p></div>
+		<div class="cella doppia"><p class="anno">1971 </p> <br> <p class="subtitle2">Ray Tomlinson </p> <p><br></p><p class="testo">Il ricercatore Ray Tomlinson sviluppa un software che permette di far comunicare le diverse persone che lavorano ad ARPANET utilizzando il computer, e nasce così l’email. QWERTYUIOP sono sia le prime dieci lettere della tastiera che, secondo una leggenda del web, il testo del primo messaggio di posta elettronica inviato da Tomlinson. Lo sviluppatore statunitense studia anche la forma dell’indirizzo di posta elettronica, e reinterpreta il simbolo chiocciola.</p></div>
 		<div class="cella doppia"><img class="circolare" src="assets/img/prima_email2.jpg"></div>
 		<div class="cella doppia"> </div>
 	</div>
@@ -470,8 +480,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella doppia"><p class="subtitle2">1975 <br> Caselle differenziate</p> <p><br></p><p class="testo">Shiva Ayyadurai progetta la suddivisione delle caselle di posta elettronica in “messaggi in entrata” e “messaggi in uscita”. Ciò permette un'organizzazione più razionale e chiara delle email, oltre che una suddivisione più netta della conversazione tra mittente e destinatario. D'ora in avanti tracciare le email diventa decisamente più facile e fattibile.</p></div>
-		<div class="cella doppia"><img class="circolare" src="assets/img/sentvsinbox2.jpg"></div>
+		<div class="cella doppia"><p class="anno">1975</p> <br> <p class="subtitle2">Caselle differenziate</p> <p><br></p><p class="testo">Shiva Ayyadurai progetta la suddivisione delle caselle di posta elettronica in “messaggi in entrata” e “messaggi in uscita”. Ciò permette un’organizzazione più razionale e chiara delle email, oltre che una suddivisione più netta della conversazione tra mittente e destinatario. D'ora in avanti tracciare le email diventa decisamente più facile e fattibile.</p></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/shiva.jpg"></div>
 		<div class="cella doppia"> </div>
 	</div>
 
@@ -483,7 +493,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	<div class="griglia2">
 		<div class="cella doppia"></div>
 		<div class="cella doppia"><img class="circolare" src="assets/img/prime-emoji-shigetaka-kurita2.png"> </div>
-		<div class="cella doppia"><p class="subtitle2">1980 <br> Emoticon</p> <p><br></p><p class="testo">Fanno il loro debutto le emoticon, utilizzate nei messaggi per esprimere il proprio stato d’animo, in principio puramente testuali. Le prime emoji a simbolo risalgono solo al 1999, create da Shigetaka Kurita. Da allora esse permettono di utilizzare un linguaggio più affine alla fisiognomica e di comunicare dei messaggi più vicini alla comunicazione non verbale.</p> </div>
+		<div class="cella doppia"><p class="anno">1980 </p> <br> <p class="subtitle2"> Emoticon</p> <p><br></p><p class="testo">Fanno il loro debutto le emoticon, utilizzate nei messaggi per esprimere il proprio stato d’animo, in principio puramente testuali. Le prime emoji a simbolo risalgono solo al 1999, create da Shigetaka Kurita. Da allora esse permettono di utilizzare un linguaggio più affine alla fisiognomica e di comunicare dei messaggi più vicini alla comunicazione non verbale.</p> </div>
 	</div>
 
 	<div class="griglia2">
@@ -492,8 +502,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella doppia"><p class="subtitle2">1985 <br> ISP </p> <p><br></p><p class="testo"> Con l’arrivo dei primi Internet Service Provider, avviene il passaggio da programma utilizzato solamente all’interno di ARPANET a strumento diffuso in tutto il mondo. Gli ISP hanno permesso all’e-mail di divenire un vero e proprio mezzo di comunicazione globale, garantendo una connessione capillare tra le persone sparse ovunque per il mondo. L’e-mail pone fine alle lunghe file davanti al fax, riduce l’uso di fotocopiatrici e di comunicazioni via telefono.</p></div>
-		<div class="cella doppia"><img class="circolare" src="assets/img/isp.png"></div>
+		<div class="cella doppia"><p class="anno">1985 </p><br> <p class="subtitle2">ISP </p> <p><br></p><p class="testo"> Con l’arrivo dei primi Internet Service Provider, avviene il passaggio da programma utilizzato solamente all’interno di ARPANET a strumento diffuso in tutto il mondo. Gli ISP hanno permesso all’email di divenire un vero e proprio mezzo di comunicazione globale, garantendo una connessione capillare tra le persone sparse ovunque per il mondo. L’email pone fine alle lunghe file davanti al fax, riduce l’uso di fotocopiatrici e di comunicazioni via telefono.</p></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/isp.jpeg"></div>
 		<div class="cella doppia"> </div>
 	</div>
 
@@ -505,7 +515,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	<div class="griglia2">
 		<div class="cella doppia"></div>
 		<div class="cella doppia"><img class="circolare" src="assets/img/eudora.png"> </div>
-		<div class="cella doppia"><p class="subtitle2">1988 <br> Primi client </p> <p><br></p><p class="testo">Nascono Eudora, Pegasus Mail, Lotus Notes: alcuni tra i primi client di posta, ossia programmi per la gestione, composizione, trasmissione, ricezione e organizzazione di e-mail. Ad esempio, Eudora è uno dei primi programmi di posta elettronica creati e resi pubblici gratuitamente (freeware), con un'interfaccia grafica appositamente realizzata. La prima versione fu scritta da Steve Dorner.</p> </div>
+		<div class="cella doppia"><p class="anno">1988 <br> </p> <p class="subtitle2"> Primi client </p> <p><br></p><p class="testo">Nascono Eudora, Pegasus Mail, Lotus Notes: alcuni tra i primi client di posta, ossia programmi per la gestione, composizione, trasmissione, ricezione e organizzazione di e-mail. Ad esempio, Eudora è uno dei primi programmi di posta elettronica creati e resi pubblici gratuitamente (freeware), con un'interfaccia grafica appositamente realizzata. La prima versione fu scritta da Steve Dorner.</p> </div>
 	</div>
 
 	<div class="griglia2">
@@ -514,8 +524,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella doppia"><p class="subtitle2">1990 <br> Mailing list </p> <p><br></p><p class="testo"> Nascono le prime Mailing list, ovvero dei gruppi di discussione che utilizzano la posta elettronica per comunicare tra di loro (gli antenati dei gruppi su WhatsApp). Letteralmente "lista di corrispondenza", è intesa sia come lista di distribuzione e diffusione che come lista di discussione. Nello specifico è un sistema organizzato per la partecipazione di più persone ad una discussione asincrona o per la distribuzione di informazioni utili agli interessati/iscritti attraverso l'invio in multicast di email ad una lista di indirizzi di posta elettronica di utenti iscritti.</p></div>
-		<div class="cella doppia"><img class="circolare" src="assets/img/mailinglist2.png"></div>
+		<div class="cella doppia"><p class="anno">1990 </p> <br> <p class="subtitle2"> Mailing list </p> <p><br></p><p class="testo"> Nascono le prime Mailing list, ovvero dei gruppi di discussione che utilizzano la posta elettronica per comunicare tra di loro (gli antenati dei gruppi su WhatsApp). Letteralmente "lista di corrispondenza", è intesa sia come lista di distribuzione e diffusione che come lista di discussione. Nello specifico è un sistema organizzato per la partecipazione di più persone ad una discussione asincrona o per la distribuzione di informazioni utili agli interessati/iscritti attraverso l'invio in multicast di email ad una lista di indirizzi di posta elettronica di utenti iscritti.</p></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/mailinglist.jpeg"></div>
 		<div class="cella doppia"> </div>
 	</div>
 
@@ -527,7 +537,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	<div class="griglia2">
 		<div class="cella doppia"></div>
 		<div class="cella doppia"><img class="circolare" src="assets/img/outlook.gif"> </div>
-		<div class="cella doppia"><p class="subtitle2">1992 <br> Client moderni </p> <p><br></p><p class="testo">Debutta Microsoft Outlook, il primo servizio e client di posta elettronica moderno. La storia del software Microsoft Outlook inizia con il rilascio di Outlook per MS-DOS. Questa versione originale è ben lontana dallo strumento multifunzionale di comunicazione e di gestione che è divenuta ora, punto fermo negli uffici di tutto il mondo.</p> </div>
+		<div class="cella doppia"><p class="anno">1992 </p> <br> <p class="subtitle2"> Client moderni </p> <p><br></p><p class="testo">Debutta Microsoft Outlook, il primo servizio e client di posta elettronica moderno. La storia del software Microsoft Outlook inizia con il rilascio di Outlook per MS-DOS. Questa versione originale è ben lontana dallo strumento multifunzionale di comunicazione e di gestione che è divenuta ora, punto fermo negli uffici di tutto il mondo.</p> </div>
 	</div>
 
 	<div class="griglia2">
@@ -536,8 +546,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella doppia"><p class="subtitle2">1995 <br> Spamming </p> <p><br></p><p class="testo"> Negli anni ’90, con l’uso più massiccio della posta elettronica prende vita il fenomeno fastidioso dello spamming. L’invio di messaggi a mittenti che non hanno autorizzato l’uso del proprio indirizzo diventa in pochi anni una piaga del web.  La parola SPAM deriva da una marca di carne di maiale in scatola (spiced ham) famosa in USA negli anni ’70 perché attuò una massiccia campagna pubblicitaria con invio continuo di volantini promozionali tramite posta. </p></div>
-		<div class="cella doppia"><img class="circolare" src="assets/img/spam.png"></div>
+		<div class="cella doppia"><p class="anno">1995 </p> <br> <p class="subtitle2"> Spamming </p> <p><br></p><p class="testo"> Negli anni ’90, con l’uso più massiccio della posta elettronica prende vita il fenomeno fastidioso dello spamming. L’invio di messaggi a mittenti che non hanno autorizzato l’uso del proprio indirizzo diventa in pochi anni una piaga del web.  La parola SPAM deriva da una marca di carne di maiale in scatola (spiced ham) famosa in USA negli anni ’70 perché attuò una massiccia campagna pubblicitaria con invio continuo di volantini promozionali tramite posta. </p></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/spam2.png"></div>
 		<div class="cella doppia"> </div>
 	</div>
 
@@ -547,8 +557,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia2">
 		<div class="cella doppia"></div>
-		<div class="cella doppia"><img class="circolare" src="assets/img/Spam-email2.jpg"></div>
-		<div class="cella doppia testo">Le junk mail (posta spazzatura) rappresentano una reale molestia digitale. Si possono combattere con software chiamati <u>ANTISPAM</u>, che i server e-mail utilizzano per ridurre il carico di spam. Alcuni di questi rifiutano dei messaggi provenienti da server conosciuti come spammer (bloccaggio), altri analizzano in modo automatico il contenuto delle e-mail ed eliminano o spostano quelli che sembrano spam (filtraggio). Il bloccaggio permette anche di ridurre la banda sprecata, rifiutando i messaggi prima che siano trasmessi, e viene preferita perché moltu trovano la tecnica del filtraggio troppo invadente nei riguardi della privacy.</div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/spam_bucalettere.png"></div>
+		<div class="cella doppia testo">Le junk mail (posta spazzatura) rappresentano una reale molestia digitale. Si possono combattere con software chiamati <u>ANTISPAM</u>, che i server email utilizzano per ridurre il carico di spam. Alcuni di questi rifiutano dei messaggi provenienti da server conosciuti come spammer (bloccaggio), altri analizzano in modo automatico il contenuto delle email ed eliminano o spostano quelli che sembrano spam (filtraggio). Il bloccaggio permette anche di ridurre la banda sprecata, rifiutando i messaggi prima che siano trasmessi, e viene preferita perché moltu trovano la tecnica del filtraggio troppo invadente nei riguardi della privacy.</div>
 	</div>
 
 	<div class="griglia2">
@@ -557,8 +567,8 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	</div>
 
 	<div class="griglia2">
-		<div class="cella doppia"><p class="subtitle2">2004 <br> Posta Certificata </p> <p><br></p><p class="testo"> Viene ideata la posta elettronica certificata PEC, una e-mail particolare dotata dello stesso valore della raccomandata di ritorno. La PEC rende i documenti elettronici inviati validi sia legalmente che dal punto di vista amministrativo. Questo strumento negli anni ha avuto un ruolo sempre più importante per chiunque volesse interagire direttamente con la Pubblica Amministrazione. </p></div>
-		<div class="cella doppia"><img class="circolare" src="assets/img/pec.png"></div>
+		<div class="cella doppia"><p class="anno">2004 </p> <br> <p class="subtitle2"> Posta Certificata </p> <p><br></p><p class="testo"> Viene ideata la posta elettronica certificata PEC, una e-mail particolare dotata dello stesso valore della raccomandata di ritorno. La PEC rende i documenti elettronici inviati validi sia legalmente che dal punto di vista amministrativo. Questo strumento negli anni ha avuto un ruolo sempre più importante per chiunque volesse interagire direttamente con la Pubblica Amministrazione. </p></div>
+		<div class="cella doppia"><img class="circolare" src="assets/img/pec2.png"></div>
 		<div class="cella doppia"> </div>
 	</div>
 
@@ -570,7 +580,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 	<div class="griglia2">
 		<div class="cella doppia"></div>
 		<div class="cella doppia"><img class="circolare"  src="assets/img/gmail.jpeg"> </div>
-		<div class="cella doppia"><p class="subtitle2">2007 <br> Gmail </p> <p><br></p><p class="testo">Nasce Google mail, abbreviato Gmail, il servizio più tardivo ma che diventa in poco tempo il più utilizzato al mondo. Gmail è un servizio gratuito di posta elettronica fornito da Google. È possibile accedervi via web o tramite applicazioni che usano i protocolli POP3 ed IMAP.</p> </div>
+		<div class="cella doppia"><p class="anno">2007 </p> <br> <p class="subtitle2"> Gmail </p> <p><br></p><p class="testo">Nasce Google mail, abbreviato Gmail, il servizio più tardivo ma che diventa in poco tempo il più utilizzato al mondo. Gmail è un servizio gratuito di posta elettronica fornito da Google. È possibile accedervi via web o tramite applicazioni che usano i protocolli POP3 ed IMAP.</p> </div>
 	</div>
 
 	<div class="griglia">
@@ -581,7 +591,7 @@ Com’è nata l’e-mail, detta anche posta elettronica?</pre>
 
 	<div class="griglia" id="funzionamento">
 		<div class="cella"></div>
-		<div class="cella quadrupla head-capitolo" align="center">Come funziona l'email?</div>
+		<div class="cella quadrupla head-capitolo" align="center">Come funziona l’email?</div>
 		<div class="cella"></div>
 	</div>
 
@@ -619,7 +629,7 @@ Come funziona l’e-mail?</pre>
 	</div>
 
 	<div class="griglia">
-		<div class="cella doppia subtitle2">Il protocollo SMTP </div>
+		<div class="cella doppia subtitle2">Il protocollo <br>SMTP </div>
 		<div class="cella doppia subtitle2">I protocolli <br> IMAP e POP3</div>
 		<div class="cella doppia subtitle2">Il DNS</div>
 	</div>
@@ -684,20 +694,37 @@ Come funziona l’e-mail?</pre>
 
 	<div class="griglia">
 		<div class="cella"></div>
-		<div class="cella quadrupla"> <video class="video-centrale" poster="assets/img/intro_smtp2.png" controls> <source src="assets/video/SMTP-GoDaddy.mp4"></video> </div>
-		<div class="cella testo"> Per approfondire il concetto di SMTP, estratto di un video pubblicato sulla piattaforma Youtube dal canale GoDaddy.</div>
+		<div class="cella quadrupla"> <video class="video-centrale bordo-video" poster="assets/img/intro_smtp2.png" controls> <source src="assets/video/SMTP-GoDaddy.mp4"></video> </div>
+		<div class="cella"></div> 
 	</div>
-
+	<div class="griglia">
+		<div class="cella"></div>
+		<div class="cella doppia testo"><a href=https://www.youtube.com/watch?v=j7kMZD81hec&t> Per approfondire il concetto di SMTP, estratto di un video in lingua inglese pubblicato sulla piattaforma Youtube dal canale GoDaddy.</a></div>
+		<div class="cella tripla"></div>
+	</div>
+	<br>
+	<br>
 	<div class="griglia">
 		<div class="cella"> </div>
-		<div class="cella quadrupla">  <video class="video-centrale" poster="assets/img/intro_pop2.png" controls> <source src="assets/video/POP-and-IMAP-GoDaddy.mp4"></video> </div>
-		<div class="cella testo"> Per approfondire la relazione tra POP3 e IMAP, estratto di un video pubblicato sulla piattaforma Youtube dal canale GoDaddy.</div>
+		<div class="cella quadrupla">  <video class="video-centrale bordo-video" poster="assets/img/intro_pop2.png" controls> <source src="assets/video/POP-and-IMAP-GoDaddy.mp4"></video> </div>
+		<div class="cella"></div>
 	</div>
-
+	<div class="griglia">
+		<div class="cella"></div>
+		<div class="cella doppia testo"> <a href="https://www.youtube.com/watch?v=bKECC0DHe9Y"> Per approfondire la relazione tra POP3 e IMAP, estratto di un video in lingua inglese pubblicato sulla piattaforma Youtube dal canale GoDaddy.</a></div>
+		<div class="cella tripla"></div>
+	</div>
+	<br>
+	<br>
 	<div class="griglia">
 		<div class="cella"> </div>
-		<div class="cella quadrupla"> <video class="video-centrale" poster="assets/img/intro_dns2.png" controls> <source src="assets/video/DNS-GoDaddy.mp4"></video> </div>
-		<div class="cella testo">Per approfondire il concetto di DNS, estratto di un video pubblicato sulla piattaforma Youtube dal canale GoDaddy.</div>
+		<div class="cella quadrupla"> <video class="video-centrale bordo-video" poster="assets/img/intro_dns2.png" controls> <source src="assets/video/DNS-GoDaddy.mp4"></video> </div>
+		<div class="cella"></div>
+	</div>
+	<div class="griglia">
+		<div class="cella"></div>
+		<div class="cella doppia testo"><a href="https://www.youtube.com/watch?v=HsQOWfc3Wic&t"> Per approfondire il concetto di DNS, estratto di un video in lingua inglese pubblicato sulla piattaforma Youtube dal canale GoDaddy.</a></div>
+		<div class="cella tripla"></div>
 	</div>
 
 	<div class="griglia">
@@ -726,8 +753,8 @@ Come funziona l’e-mail?</pre>
 
 	<div class="griglia">
 		<div class="cella doppia testo">Cosa accade quando una email non viene recapitata? I problemi possono essere svariati: ad esempio, la casella di posta elettronica del destinatario è piena e il server POP3 non riesce a inserire in mailbox la missiva, oppure la casella non esiste più o, ancora, il server in uscita è così pieno di messaggi in coda per essere trasferiti che la nostra email viene inviata con immenso ritardo oppure non viene mai recapitata. Senza contare poi, che a volte, alcuni server pubblici finiscono in una black list a causa di attacchi spam e via discorrendo, per cui tutte le “lettere” inviate attraverso questi server rischiano di essere classificate dal destinatario come pubblicità indesiderata.</div>
-		<div class="cella doppia testo">Con la posta elettronica, l'identità del mittente può essere falsificabile: chiunque può intestare il proprio mittente come direzione@fiat.it senza che il sistema lo impedisca. Inoltre, minacce comuni nell'uso di una piattaforma email sono riscontrabili in messaggi contenenti minacce informatiche come i malware (software maligni come virus, trojan, worm...). Il phishing è invece una pratica comune tra chi desidera rubare delle informazioni fornite direttamente dal proprietario: un vera e propria truffa informatica effettuata inviando un'e-mail camuffandosi per qualcun altro, in cui si invita il destinatario a fornire dati riservati (come ad esempio il numero di carta di credito). </div>
-		<div class="cella doppia testo">Esistono delle regole alla base della comunicazione via email, delle convenzioni universalmente accettate che rientrano nel concetto di netiquette. Il termine deriva dall’unione delle parole net ed etiquette: rappresenta una sorta di galateo dell’ambiente digitale, costituito dall'insieme delle regole che dovrebbero assicurare educazione e buon comportamento in rete. Essenzialità, ortografia, cordialità nel saluto, firma e cura di oggetto e corpo dell'e-mail sono solo alcune delle convenzioni che dovrebbero essere adottate per una comunicazione corretta via posta elettronica.</div>
+		<div class="cella doppia testo">Con la posta elettronica, l’identità del mittente può essere falsificabile: chiunque può intestare il proprio mittente come direzione@fiat.it senza che il sistema lo impedisca. Inoltre, minacce comuni nell’uso di una piattaforma email sono riscontrabili in messaggi contenenti minacce informatiche come i malware (software maligni come virus, trojan, worm...). Il phishing è invece una pratica comune tra chi desidera rubare delle informazioni fornite direttamente dal proprietario: un vera e propria truffa informatica effettuata inviando un’email camuffandosi per qualcun altro, in cui si invita il destinatario a fornire dati riservati (come ad esempio il numero di carta di credito). </div>
+		<div class="cella doppia testo">Esistono delle regole alla base della comunicazione via email, delle convenzioni universalmente accettate che rientrano nel concetto di netiquette. Il termine deriva dall’unione delle parole net ed etiquette: rappresenta una sorta di galateo dell’ambiente digitale, costituito dall'insieme delle regole che dovrebbero assicurare educazione e buon comportamento in rete. Essenzialità, ortografia, cordialità nel saluto, firma e cura di oggetto e corpo dell’email sono solo alcune delle convenzioni che dovrebbero essere adottate per una comunicazione corretta via posta elettronica.</div>
 	</div>
 
 	<div class="griglia">
@@ -778,17 +805,17 @@ Come funziona l’e-mail?</pre>
 			<p class="testo-bold grigio">Sitografia testi</p> 
 			<p><br></p>
 			<p><a class="grigio" href=https://it.wikipedia.org/wiki/Posta_elettronica>Wikipedia. La posta elettronica</a></p>
-			<p><a class="grigio" href=https://www.tuttosullapostaelettronica.it/blog/la-storia-della-posta-elettronica/>Andrea Marucci. Tutto sulla posta elettronica, la storia dell'email</a></p>
-			<p><a class="grigio" href=https://www.tuttosullapostaelettronica.it/blog/come-funziona-la-posta-elettronica/>Andrea Marucci. Tutto sulla posta elettronica, come funziona l'email</a></p> 
-			<p><a class="grigio" href=https://www.fastweb.it/web-e-digital/storia-dell-email/#:~:text=La%20nascita%20della%20e%2Dmail,messaggio%20da%20computer%20a%20computer.>Fastweb. Storia dell'email</a></p> 
-			<p><a class="grigio" href=https://news.titanka.com/2012/04/19/breve-storia-dellemail/>Blog Titanka. Breve storia dell'email</a></p> 
+			<p><a class="grigio" href=https://www.tuttosullapostaelettronica.it/blog/la-storia-della-posta-elettronica/>Andrea Marucci. Tutto sulla posta elettronica, la storia dell’email</a></p>
+			<p><a class="grigio" href=https://www.tuttosullapostaelettronica.it/blog/come-funziona-la-posta-elettronica/>Andrea Marucci. Tutto sulla posta elettronica, come funziona l’email</a></p> 
+			<p><a class="grigio" href=https://www.fastweb.it/web-e-digital/storia-dell-email/#:~:text=La%20nascita%20della%20e%2Dmail,messaggio%20da%20computer%20a%20computer.>Fastweb. Storia dell’email</a></p> 
+			<p><a class="grigio" href=https://news.titanka.com/2012/04/19/breve-storia-dellemail/>Blog Titanka. Breve storia dell’email</a></p> 
 			<p><a class="grigio" href=http://www.instoria.it/home/nascita_email.htm>Vincenzo Grienti, InStoria. Nascita e sviluppo della email</a></p> 
 		</div>
 
 		<div class="cella doppia testo">
 			<p><br></p>	
 			<p><br></p>	
-			<p><a class="grigio" href=https://www.ionos.it/digitalguide/e-mail/tecnica-e-mail/come-funziona-linvio-di-une-mail/>Digital guide Ionos. Cosa succede durante l'invio di una mail?</a></p> 
+			<p><a class="grigio" href=https://www.ionos.it/digitalguide/e-mail/tecnica-e-mail/come-funziona-linvio-di-une-mail/>Digital guide Ionos. Cosa succede durante l’invio di una mail?</a></p> 
 			<p><a class="grigio" href=https://www.internetpost.it/email-come-funzionano/>Hostingsolutions, Internetpost.it. Email: impariamo a capire come funzionano</a></p>
 			<p><a class="grigio" href=https://www.serverlab.it/email-come-funziona/>Serverlab. Email, come funziona</a></p>
 			<p><a class="grigio" href=https://paroleepois.it/consigli-non-richiesti/netiquette-e-mail/>Parole&pois. La netiquette delle email</a></p>
@@ -799,12 +826,12 @@ Come funziona l’e-mail?</pre>
 			<p class="testo-bold grigio">Fonti immagini</p> 
 			<p><br></p>	
 			<p><a class="grigio" href=https://storicamente.org/coglitore_telegrafo_elettrico_storia>Storicamente. Telegrafo morse</a></p>
-			<p><a class="grigio" href=https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/16661616/image/original-8138ef218dc96424b8b61aa5ae84a259.jpg>Guinness World Records. Ray Tomlinson e l'email</a></p>
+			<p><a class="grigio" href=https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/16661616/image/original-8138ef218dc96424b8b61aa5ae84a259.jpg>Guinness World Records. Ray Tomlinson e l’email</a></p>
 			<p><a class="grigio" href=https://www.ilpost.it/flashes/emoji-moma/>Il post. Le prime emoticons</a></p>
 			<p><a class="grigio" href=https://tedium.co/2017/09/28/eudora-email-history/> Tedium. Interfaccia Eudora</a></p>
-			<p><a class="grigio" href=http://www.infomatika.com/support/mail/outlook/html/conf_97.html>Informatika. Microsoft Outlook '97</a></p>
-			<p><a class="grigio" href=https://www.merlinwizard.com/conosci-davvero-lorigine-dello-spam.htm/spam-2g>Merlin Wizard. Scatoletta di carne SPAM</a></p>
-			<p><a class="grigio" href=https://www.bbva.com/en/top-tips-regarding-opening-email-in-your-spam-folder/>BBVA. Casella spam</a></p>
+			<p><a class="grigio" href=http://www.infomatika.com/support/mail/outlook/html/conf_97.html>Informatika. Microsoft Outlook ’97</a></p>
+			<p><a class="grigio" href=https://www.prodigus.it/articoli/food-news/quando-il-cibo-e-spam>Prodigus. Quando il cibo è...SPAM</a></p>
+			<p><a class="grigio" href=https://castelvetranonews.it/notizie/attualita/parliamo-di/pillole-di-diritto-pubblicita-nella-cassetta-postale-e-lecita>C-News. Pubblicità nella cassetta postale, è lecita?</a></p>
 			<p><a class="grigio" href=https://www.subpng.com/png-aqbso6/>Subpng. Gmail </a></p>
 		</div>
 	</div>
@@ -813,7 +840,7 @@ Come funziona l’e-mail?</pre>
 		<div class="cella sestupla testo grigio">	
 			<p><br></p>
 			<p><br></p>		
-			<p class="testo-bold grigio">E-mail — Atlante tecnologico</p> ©Jessica Leonardi,  SUPSI Corso di Interaction design, A.A. 2020-2021. Docenti: Andreas Gysin, Giovanni Profeta. 
+			<p class="testo-bold grigio">Email — Atlante tecnologico</p> ©Jessica Leonardi,  SUPSI Corso di Interaction design, A.A. 2020-2021. Docenti: Andreas Gysin, Giovanni Profeta. 
 		</div>
 	</div>	
 
